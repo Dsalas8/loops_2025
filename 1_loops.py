@@ -51,7 +51,7 @@ for number in new_numbers:
     total += number
 print(total)
 
-Evins_list = list(range(5,25))
+Evins_list = list(range(5,26))
 total = 0 
 for number in Evins_list:
     total += number 
