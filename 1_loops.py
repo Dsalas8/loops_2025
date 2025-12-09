@@ -50,3 +50,9 @@ total = 0
 for number in new_numbers: 
     total += number
 print(total)
+
+Evins_list = list(range(5,25))
+total = 0 
+for number in Evins_list:
+    total += number 
+print(total)
