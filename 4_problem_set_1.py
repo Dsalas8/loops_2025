@@ -8,18 +8,37 @@
 
 # Write a program that prints the numbers from **1 to 10**, each on a new line.
 
-
+list1 = list(range(1,11))
+print(list1)
+for i in list1:
+    print(i)        # makes it in a line from top to bottom in the terminal, not in a list 
 
 # ### **Problem 2: Sum of Numbers
 
 # Ask the user for a number **n**, then calculate and display the **sum of all numbers from 1 to n**.
+n = int(input("Enter a number:"))
+total = 0
+for i in range(1, n+1):
+    total += i
+    #total = total +i
+print("The sum of numbers from 1 to", n, "is:", total)
 
 
 
 # ### **Problem 3: Factorial Calculator
 
 # Ask the user for a number **n**, then calculate the **factorial** of that number.
+#5! = 5 x 4 x 3 x 2 x 1 = 120       #this is a factorial it multiplys all the way back to 1 NOT ZERO  
+#n! = n(n-1) ... x 2 x 1
+def factorial(n): 
+    factorial = 1
 
+    for i in range(n):
+        factorial*= i+1
+
+    return factorial
+
+print(factorial(3))                 #multpliys by itself over and over again until we get that number. 
 # *(Example: factorial of 5 is 120)
 
 
@@ -31,9 +50,13 @@
 # ### **Problem 5: Print Even Numbers**
 
 # Ask the user for a number **n**, then print all **even numbers** from 2 up to n.
-
-
-
+n = int(input("Enter a number:"))
+list2 = list(range(2,n))
+for i in list2:
+    if i % 2 == 0:
+        print("even", i)
+    else:
+        print("odd", i)
 # ### **Problem 6: Reverse a String**
 
 # Ask the user for a string, then print the string **backwards**.
